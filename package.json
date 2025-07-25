@@ -7,12 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview:worker": "npm run build && wrangler dev",
+    "deploy:worker": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "wrangler": "^4.26.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
